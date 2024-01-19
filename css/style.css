@@ -1,0 +1,10 @@
+
+
+/*----------------------------- Main ----------------------------------------*/
+
+html, body 
+{
+	margin: 0;
+    background-color: black;
+    color: white; /* Set text color to white */
+}
