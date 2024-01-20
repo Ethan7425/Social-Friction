@@ -15,12 +15,32 @@
 		</header>
 		<div class="navbarContainer">
 			<nav class="navbar">
-				<a href="#">Profile</a>
-				<a href="#">Home</a>
-				<a href="#">Settings</a>
+				<button class="navButton" id="profileButton" onclick="changeScene('profile')">
+					<img src="img/profile.svg" alt="Icon" style="width: 60px; height: 60px;">
+				</button>
+				<button class="navButton active" id="homeButton" onclick="changeScene('home')">
+					<img src="img/watch.svg" alt="Icon" style="width: 60px; height: 60px;">
+				</button>
+				<button class="navButton" id="settingsButton" onclick="changeScene('settings')">
+					<img src="img/gear.svg" alt="Icon" style="width: 60px; height: 60px;">
+				</button>
 			</nav>
 		</div>
 
 
+<!-- Home Scene -->
+		<div class="scene" id="home" style="display: block;">
+			<p class="test">Home Page</p>
+		</div>
+
+<!-- Settings Scene -->
+		<div class="scene" id="settings" style="display: none;">
+			<p class="test">Settings Page</p>
+		</div>
+<!-- Profile Scene -->
+		<div class="scene" id="profile" style="display: none;">
+			<p class="test">Profile Page</p>
+		</div>
 </body>
+<script src="js/scenes.js"></script>
 </html>

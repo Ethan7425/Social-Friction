@@ -1,11 +1,53 @@
+/*----------------------------- Colors ----------------------------------------*/
+:root 
+{
+	--customBlack: #1e1b3b;
+	--customPink: #bd3867;
+	--customLBlue: #1db9e3;
+	--customBlue: #256bbb;
+}
 
+.test
+{
+	position: absolute;
+}
+
+/*----------------------------- Fonts ----------------------------------------*/
+
+@font-face 
+{
+    font-family: 'Aquire';
+    src: url('../fonts/aquire-font/Aquire-BW0ox.otf') format('opentype');
+	font-weight: normal;
+    font-style: normal;
+}
+
+@font-face 
+{
+    font-family: 'Aquire';
+    src: url('../fonts/aquire-font/AquireBold-8Ma60.otf') format('opentype');
+	font-weight: bold;
+    font-style: normal;
+}
+
+@font-face 
+{
+    font-family: 'Aquire';
+    src: url('../fonts/aquire-font/AquireLight-YzE0o.otf') format('opentype');
+	font-weight: 300;
+    font-style: normal;
+}
 
 /*----------------------------- Main ----------------------------------------*/
+
+
 
 * 
 {
 	box-sizing: border-box;
 	user-select: none;
+	font-family: 'Aquire', sans-serif;
+	font-weight: bold;
 	/* color: white; Set text color to white */
 }
 
@@ -29,30 +71,36 @@ html, body
 .header
 {
 	position: absolute;
-	top: 0;
+	top: 20px;
 	left: 50%;
-	padding: 20px 100px;
-	background: green;
+	padding: 20px 50px;
+	background: transparent;
+	backdrop-filter: blur(10px);
 	transform: translate(-50%);
+	border: 2px solid var(--customPink);
+	border-radius: 4px;
 }
 
 .name
 {
 	font-size: 32px;
-	color: red;
+	color: var(--customPink);
 	text-decoration: none;
 	font-weight: 700;
 }
+
+
+/*----------------------------- Nav Bar ----------------------------------------*/
 
 .navbarContainer
 {
 	position: absolute;
 	bottom: 0;
 	left: 50%;
-	width: 80%;
+	transform: translate(-50%);
+	width: 50%;
 	padding: 20px 100px;
 	background: transparent;
-	transform: translate(-50%);
 }
 
 .navbar
@@ -63,31 +111,29 @@ html, body
 	z-index: 100;
 }
 
-.navbar a
+.navbar 
 {
 	position: relative;
 	font-size: 18px;
-	color: white;
+	color: red;
+	background: transparent;
 	font-weight: 500;
 	text-decoration: none;
 	margin-left: 40px;
 }
 
-.navbar a::before
+.navButton
 {
-	content: '';
-	position: absolute;
-	top: 100%;
-	left: 0;
-	width: 0;
-	height: 2px;
-	background: #fff;
-	transition: .3s;
+	border: 2px solid var(--customPink);
+	background: var(--customPink);
+	backdrop-filter: blur(10px);
+	border-radius: 10px;
+	opacity: 0.1;
 }
 
-.navbar a:hover::before
+.navButton img
 {
-	width: 100%;
+	opacity: 1;
 }
 
 
