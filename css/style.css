@@ -101,6 +101,8 @@ html, body
 	width: 50%;
 	padding: 20px 100px;
 	background: transparent;
+	border: 4px solid var(--customPink);
+	border-radius: 30px;
 }
 
 .navbar
@@ -111,37 +113,75 @@ html, body
 	z-index: 100;
 }
 
-.navbar 
-{
-	position: relative;
-	font-size: 18px;
-	color: red;
-	background: transparent;
-	font-weight: 500;
-	text-decoration: none;
-	margin-left: 40px;
-}
-
 .navButton
 {
-	border: 2px solid var(--customPink);
-	background: var(--customPink);
-	backdrop-filter: blur(10px);
+	border: 4px solid var(--customPink);
+	background: transparent;
+	backdrop-filter: blur(50px);
 	border-radius: 10px;
-	opacity: 0.1;
-}
-
-.navButton img
-{
 	opacity: 1;
 }
 
+.navButton.active
+{
+	box-shadow: 0 0 10px 2px var(--customPink);
+}
 
 
 
 
+/*----------------------------- Home Scene ----------------------------------------*/
 
+.choiceContainer
+{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	height: 200px;
+	width: 600px;
+	transform: translate(-50%, -50%);
+	background: transparent;
 
+	display: flex;
+	justify-content: space-between;
+	
+}
+
+#choiceButton
+{
+	height: 100%;
+	width: 200px;
+
+	border-radius: 20px;
+
+	display: flex;
+	justify-content: center;
+
+	border: 4px solid var(--customBlue);
+	background: transparent;
+	backdrop-filter: blur(50px);
+}
+
+/*----------------------------- Settings Scene ----------------------------------------*/
+
+.slider-container 
+{
+	position: absolute;
+	width: 20%;
+	left: 50%;
+	top: 30%;
+	transform: translate(-50%, -50%);
+	margin: 50px auto;
+	color: var(--customBlue);
+	text-align: center;
+}
+  
+.slider 
+{
+	width: 100%;
+}
+  
+  
 
 /*----------------------------- Media Queries ----------------------------------------*/
 

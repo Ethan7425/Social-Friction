@@ -30,17 +30,29 @@
 
 <!-- Home Scene -->
 		<div class="scene" id="home" style="display: block;">
-			<p class="test">Home Page</p>
+			<div class="choiceContainer">
+				<button id="choiceButton" class="timerYes" onclick="startTimer()">
+					<img src="img/yes.svg" alt="Choice" style="width: 200px; height: 200px;">
+				</button>
+				<button id="choiceButton" class="timerNo">
+					<img src="img/no.svg" alt="Choice" style="width: 200px; height: 200px;">
+				</button>
+			</div>
 		</div>
 
 <!-- Settings Scene -->
 		<div class="scene" id="settings" style="display: none;">
-			<p class="test">Settings Page</p>
+			<div class="slider-container">
+				<input type="range" min="1" max="60" value="15" class="slider" id="mySlider">
+				<p>Value: <span id="sliderValue">15</span></p>
+			  </div>
 		</div>
 <!-- Profile Scene -->
 		<div class="scene" id="profile" style="display: none;">
-			<p class="test">Profile Page</p>
+			
 		</div>
 </body>
 <script src="js/scenes.js"></script>
+<script src="js/settings.js"></script>
+<script src="js/timer.js"></script>
 </html>
