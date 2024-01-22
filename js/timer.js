@@ -1,40 +1,35 @@
+
 // Get elements
 const choiceContainer = document.getElementById("choiceContainer");
 const timerContainer = document.getElementById("timerContainer");
-const timerValue = document.getElementById("timerValue");
+const countdownElement = document.querySelector(".timer");
+const sliderValue = document.getElementById("sliderValue");
+const yes = document.getElementById("yesContainer");
+// const no = document.getElementById("no");
 
-// Check if elements exist before using them
-if (slider && sliderValue && timerValue && choiceContainer && timerContainer) {
-  // Update the slider value on input
-  slider.addEventListener("input", function () {
-    sliderValue.textContent = this.value;
-  });
+function counter() 
+{
+	countdownElement.textContent = "0"; // Set initial value
+	timerContainer.style.display = "block";
+	
+	var c = 0;
+	
+  	// Get the integer value of the slider in seconds
+  	const seconds = parseInt(sliderValue.textContent);
 
-  // Function to start the timer
-  function startTimer() 
-  {
-    // Hide the choice container
-    choiceContainer.style.display = "none";
+  	// Calculate the interval in milliseconds
+  	const interval = (seconds * 1000) / 100;
 
-    // Show the timer container
-    timerContainer.style.display = "block";
-
-    // Get the selected value from the slider
-    const duration = parseInt(slider.value);
-
-    // Set initial timer value
-    let timeRemaining = duration;
-
-    // Update timer value every second
-    const timerInterval = setInterval(function () {
-      timerValue.textContent = timeRemaining;
-      timeRemaining--;
-
-      // Stop the timer when it reaches 0
-      if (timeRemaining < 0) {
-        clearInterval(timerInterval);
-        // You can perform additional actions when the timer ends
-      }
-    }, 1000);
-  }
+	var count = setInterval(function () 
+	{  
+		c = parseInt(countdownElement.textContent);
+		countdownElement.textContent = (++c).toString();
+		if (c == 100) 
+		{
+			clearInterval(count);
+			timerContainer.style.display = "none";
+			yes.style.display = "block"
+		}
+	}, interval);
 }
+  

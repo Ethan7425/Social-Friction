@@ -9,3 +9,6 @@ slider.addEventListener("input", function() {
 
 // Initialize the output value
 output.textContent = slider.value;
+
+// Make slider global
+window.slider = slider;

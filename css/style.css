@@ -79,6 +79,7 @@ html, body
 	transform: translate(-50%);
 	border: 2px solid var(--customPink);
 	border-radius: 4px;
+	text-align: center;
 }
 
 .name
@@ -98,7 +99,7 @@ html, body
 	bottom: 0;
 	left: 50%;
 	transform: translate(-50%);
-	width: 50%;
+	width: 60%;
 	padding: 20px 100px;
 	background: transparent;
 	border: 4px solid var(--customPink);
@@ -107,19 +108,22 @@ html, body
 
 .navbar
 {
+	width: 100%;
 	display: flex;
-	justify-content: space-between;
-	align-items: center;
+	justify-content: space-around;
+	align-items: flex-start;
 	z-index: 100;
 }
 
 .navButton
 {
+	width: 100%;
 	border: 4px solid var(--customPink);
 	background: transparent;
 	backdrop-filter: blur(50px);
 	border-radius: 10px;
 	opacity: 1;
+	padding: 4px 4px;
 }
 
 .navButton.active
@@ -132,18 +136,18 @@ html, body
 
 /*----------------------------- Home Scene ----------------------------------------*/
 
-.choiceContainer
+#choiceContainer
 {
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	height: 200px;
-	width: 600px;
+	width: 98%;
 	transform: translate(-50%, -50%);
 	background: transparent;
 
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
 	
 }
 
@@ -159,7 +163,56 @@ html, body
 
 	border: 4px solid var(--customBlue);
 	background: transparent;
-	backdrop-filter: blur(50px);
+	backdrop-filter: blur(100px);
+}
+
+/*----------------------------- Timer ----------------------------------------*/
+
+
+#timerContainer
+{
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 100vh;
+	background: #070707;
+	z-index: 100;
+}
+
+#timerContainer:before
+{
+	content: 'Loading';
+	position: absolute;
+
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+	font-size: 18em;
+	font-weight: 900;
+	text-transform: uppercase;
+	color: rgba(255,255,255,0.1);
+}
+
+
+.timer
+{
+	position: absolute;
+
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+	color: white;
+	font-size: 16em;
+	font-weight: 700;
+	z-index: 1;
+}
+
+.timer:after
+{
+	content: '%';
+	font-size: 0.5em;
 }
 
 /*----------------------------- Settings Scene ----------------------------------------*/
@@ -181,11 +234,39 @@ html, body
 	width: 100%;
 }
   
-  
+/*----------------------------- Yes ----------------------------------------*/
+
+#yesContainer
+{
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 100vh;
+	background: #070707;
+	z-index: 100;
+	color: white;
+}
+
+#yes
+{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 10em;
+	text-align: center; 
+}
 
 /*----------------------------- Media Queries ----------------------------------------*/
 
-/* @media and (max-width: 600px)
+@media (max-width: 600px)
 {
-	
-} */
+	.bg
+	{
+		height: 100%;
+	}
+	.navbarContainer
+	{
+		bottom: 0;
+	}
+}

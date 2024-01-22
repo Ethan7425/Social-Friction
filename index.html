@@ -16,13 +16,13 @@
 		<div class="navbarContainer">
 			<nav class="navbar">
 				<button class="navButton" id="profileButton" onclick="changeScene('profile')">
-					<img src="img/profile.svg" alt="Icon" style="width: 60px; height: 60px;">
+					<img src="img/profile.svg" alt="Icon" style="width: 100%; height: 100%;">
 				</button>
 				<button class="navButton active" id="homeButton" onclick="changeScene('home')">
-					<img src="img/watch.svg" alt="Icon" style="width: 60px; height: 60px;">
+					<img src="img/watch.svg" alt="Icon" style="width: 100%; height: 100%;">
 				</button>
 				<button class="navButton" id="settingsButton" onclick="changeScene('settings')">
-					<img src="img/gear.svg" alt="Icon" style="width: 60px; height: 60px;">
+					<img src="img/gear.svg" alt="Icon" style="width: 100%; height: 100%;">
 				</button>
 			</nav>
 		</div>
@@ -30,14 +30,23 @@
 
 <!-- Home Scene -->
 		<div class="scene" id="home" style="display: block;">
-			<div class="choiceContainer">
-				<button id="choiceButton" class="timerYes" onclick="startTimer()">
-					<img src="img/yes.svg" alt="Choice" style="width: 200px; height: 200px;">
+			<div id="choiceContainer">
+				<button id="choiceButton" class="timerYes" onclick="counter()">
+					<img src="img/yes.svg" alt="Choice" style="width: 100%; height: 100%;">
 				</button>
-				<button id="choiceButton" class="timerNo">
-					<img src="img/no.svg" alt="Choice" style="width: 200px; height: 200px;">
+				<button id="choiceButton" class="timerNo" onclick="changeScene('no')">
+					<img src="img/no.svg" alt="Choice" style="width: 100%; height: 100%;">
 				</button>
 			</div>
+
+			<div id="timerContainer" style="display: none;">
+				<div class="timer"></div>
+			</div>
+
+			<div id="yesContainer" style="display: none;">
+				<p id="yes">Click OK</p>
+			</div>
+
 		</div>
 
 <!-- Settings Scene -->
@@ -51,8 +60,15 @@
 		<div class="scene" id="profile" style="display: none;">
 			
 		</div>
+
+<!-- No Scene -->
+		<div class="scene" id="no" style="display: none;">
+				<p>coucou</p>
+		</div>
+
+
 </body>
-<script src="js/scenes.js"></script>
-<script src="js/settings.js"></script>
-<script src="js/timer.js"></script>
+	<script src="js/scenes.js"></script>
+	<script src="js/settings.js"></script>
+	<script src="js/timer.js"></script>
 </html>

@@ -8,9 +8,12 @@ function changeScene(sceneId) {
 	});
   
 	// Get clicked button and add active class
-	const clickedButton = document.getElementById(sceneId + 'Button');
-	clickedButton.classList.add('active');
-  
+	if(sceneId == "home" || sceneId == "profile" || sceneId == "settings")
+	{
+		const clickedButton = document.getElementById(sceneId + 'Button');
+		clickedButton.classList.add('active');
+	}
+
 	// Hide all scenes
 	const scenes = document.querySelectorAll('.scene');
 	scenes.forEach(scene => {
