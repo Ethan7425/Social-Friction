@@ -122,17 +122,18 @@ html, body
 .navButton
 {
 	width: 100px;
-	border: 4px solid var(--customPink);
-	background: transparent;
+	border: 4px transparent var(--customBlack);
+	background: var(--customBlue);
 	backdrop-filter: blur(50px);
 	border-radius: 10px;
 	opacity: 1;
 	padding: 4px 4px;
+
 }
 
 .navButton.active
 {
-	box-shadow: 0 0 10px 2px var(--customPink);
+	box-shadow: 0 0 10px 6px var(--customBlue);
 }
 
 
@@ -324,6 +325,6 @@ html, body
 	#timerContainer:before
 	{
 		transform: translate(-50%, -50%) rotate(90deg);
-		font-size: 10em;
+		font-size: 9em;
 	}
 }
