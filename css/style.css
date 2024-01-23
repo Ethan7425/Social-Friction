@@ -261,6 +261,13 @@ html, body
 	text-align: center; 
 }
 
+/*----------------------------- No ----------------------------------------*/
+
+#no
+{
+	position: absolute;
+}
+
 /*----------------------------- Media Queries ----------------------------------------*/
 
 @media (max-width: 600px)
@@ -283,5 +290,12 @@ html, body
 		width: 30%;
 		height: 100%;
 	}
-
+	#yes
+	{
+		font-size: 6em;
+	}
+	.slider-container
+	{
+		width: 50%;
+	}
 }
