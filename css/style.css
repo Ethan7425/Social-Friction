@@ -104,20 +104,24 @@ html, body
 	background: transparent;
 	border: 4px solid var(--customPink);
 	border-radius: 30px;
+
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
 }
 
 .navbar
 {
+	height: 10%;
 	width: 100%;
 	display: flex;
 	justify-content: space-around;
-	align-items: flex-start;
 	z-index: 100;
 }
 
 .navButton
 {
-	width: 100%;
+	width: 100px;
 	border: 4px solid var(--customPink);
 	background: transparent;
 	backdrop-filter: blur(50px);
@@ -267,6 +271,17 @@ html, body
 	}
 	.navbarContainer
 	{
-		bottom: 0;
+		width: 100%;
 	}
+	.navbar
+	{
+		height: 10%;
+		width: 100%;
+	}
+	.navButton
+	{
+		width: 30%;
+		height: 100%;
+	}
+
 }
