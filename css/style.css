@@ -298,4 +298,20 @@ html, body
 	{
 		width: 50%;
 	}
+	/* .timer
+	{
+		font-weight: 5em;
+		width: 50%;
+		left: 0;
+		transform: translate(0%, -50%);
+	} */
+	.timer
+	{
+		font-size: 12em;
+	}
+	#timerContainer:before
+	{
+		transform: translate(-50%, -50%) rotate(90deg);
+		font-size: 12em;
+	}
 }
