@@ -237,6 +237,18 @@ html, body
 {
 	width: 100%;
 }
+
+/*----------------------------- Profile Scene ----------------------------------------*/
+
+.link
+{
+	position: absolute;
+	left: 50%;
+	top: 30%;
+	transform: translate(-50%, -50%);
+	color: var(--customLBlue);
+}
+
   
 /*----------------------------- Yes ----------------------------------------*/
 
@@ -312,6 +324,6 @@ html, body
 	#timerContainer:before
 	{
 		transform: translate(-50%, -50%) rotate(90deg);
-		font-size: 12em;
+		font-size: 10em;
 	}
 }
