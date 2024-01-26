@@ -100,35 +100,40 @@ html, body
 	left: 50%;
 	transform: translate(-50%);
 	width: 60%;
+	height: 15%;
 	padding: 20px 100px;
 	background: transparent;
 	border: 4px solid var(--customPink);
 	border-radius: 30px;
 
 	display: flex;
-	justify-content: space-around;
 	align-items: center;
+	justify-content: space-around;
 }
 
 .navbar
 {
-	height: 10%;
+	position: absolute;
+	left: 0;
+	height: 80%;
 	width: 100%;
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-evenly;
 	z-index: 100;
 }
 
 .navButton
 {
-	width: 100px;
+	width: 25%;
 	border: 4px transparent var(--customBlack);
 	background: var(--customBlue);
 	backdrop-filter: blur(50px);
 	border-radius: 10px;
 	opacity: 1;
+	/* margin-right: 40px;
+	margin-left: 40px; */
 	padding: 4px 4px;
-
+	transition: 0.3s ease-in-out;
 }
 
 .navButton.active
@@ -180,7 +185,7 @@ html, body
 	top: 0;
 	width: 100%;
 	height: 100vh;
-	background: #070707;
+	background-color: black;
 	z-index: 100;
 }
 
@@ -197,6 +202,7 @@ html, body
 	font-weight: 900;
 	text-transform: uppercase;
 	color: rgba(255,255,255,0.1);
+	background-color: black;
 }
 
 
@@ -274,6 +280,15 @@ html, body
 	text-align: center; 
 }
 
+#yesButton
+{
+	position: absolute;
+	left: 50%;
+	top: 20%;
+	transform: translate(-50%, -20%);
+
+}
+
 /*----------------------------- No ----------------------------------------*/
 
 #no
@@ -294,7 +309,7 @@ html, body
 #loginContainer 
 {
 	position: absolute;
-	width: 15%;
+	width: 25%;
     background-color: transparent;
     backdrop-filter: blur(20px);
 	padding: 20px;
@@ -316,6 +331,17 @@ html, body
 
 }
 
+.text
+{
+	width: 90%;
+}
+
+#loginStatus
+{
+	margin-top: 15px;
+	margin-bottom: 0;
+}
+
 /*----------------------------- Media Queries ----------------------------------------*/
 
 @media (max-width: 600px)
@@ -330,13 +356,15 @@ html, body
 	}
 	.navbar
 	{
-		height: 10%;
+		height: 75%;
 		width: 100%;
+		display: flex;
+		align-items: center;
 	}
 	.navButton
 	{
-		width: 30%;
-		height: 100%;
+		width: 25%;
+		height: 90%;
 	}
 	#yes
 	{

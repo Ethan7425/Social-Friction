@@ -30,3 +30,9 @@ function changeScene(sceneId) {
   document.getElementById("profileButton").addEventListener("click", () => changeScene('profile'));
   document.getElementById("settingsButton").addEventListener("click", () => changeScene('settings'));
   
+
+function hideYesPage()
+{
+	const yes = document.getElementById("yesContainer");
+	yes.style.display = "none";
+}
