@@ -258,7 +258,7 @@ html, body
 
 /*----------------------------- Perso Profile Scene ----------------------------------------*/
 
-.profileScene
+.profileCard
 {
 	position: absolute;
 	top: 40%;
@@ -426,5 +426,17 @@ html, body
 	#loginContainer
 	{
 		width: 90%;
+	}
+	.link
+	{
+		top: 20%;
+	}
+	.profileCard
+	{
+		top: 45%;
+	}
+	.backButton
+	{
+		width: 25%;
 	}
 }
