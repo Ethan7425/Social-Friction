@@ -59,11 +59,35 @@
 <!-- Profile Scene -->
 		<div class="scene" id="profile" style="display: none;">
 			<a href="https://www.icloud.com/shortcuts/63671d58bad14302a1e0294e4e6324f5" target="_blank" class="link">Get Shortcut</a>
+
+			<div id="loginContainer">
+				<h2>Login</h2>
+				<form id="loginForm" onsubmit="login(event)">
+					<label for="username">Username:</label>
+					<input class="text" id="username" name="username" required>
+					<br>
+					<label for="password">Password:</label>
+					<input class="password" id="password" name="password" required>
+					<br>
+					<button class="loginButton">Login</button>
+				</form>
+				<p id="loginStatus"></p>
+			</div>
+
+
+		<div class="profileScene" id="Noah">
+
 		</div>
+
+		<div class="profileScene" id="Ethan">
+			
+		</div>
+		
+	</div>
 
 <!-- No Scene -->
 		<div class="scene" id="no" style="display: none;">
-				<p>coucou</p>
+				<p>Swipe Down Then</p>
 		</div>
 
 
@@ -71,4 +95,5 @@
 	<script src="js/scenes.js"></script>
 	<script src="js/settings.js"></script>
 	<script src="js/timer.js"></script>
+	<script src="js/login.js"></script>
 </html>
