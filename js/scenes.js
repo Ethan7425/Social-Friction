@@ -31,8 +31,23 @@ function changeScene(sceneId) {
   document.getElementById("settingsButton").addEventListener("click", () => changeScene('settings'));
   
 
+const loginContainer = document.getElementById('loginContainer')
 function hideYesPage()
 {
-	const yes = document.getElementById("yesContainer");
-	yes.style.display = "none";
+	const yes = document.getElementById('yesContainer');
+	yes.style.display = 'none';
+}
+
+function backEthan()
+{
+	const EthanContainer = document.getElementById('EthanContainer');
+	EthanContainer.style.display = 'none';
+	loginContainer.style.display = 'block';
+}
+
+function backNoah()
+{
+	const NoahContainer = document.getElementById('NoahContainer');
+	NoahContainer.style.display = 'none';
+	loginContainer.style.display = 'block';
 }
