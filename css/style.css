@@ -312,6 +312,8 @@ html, body
 {
 	position: absolute;
 	left: 50%;
+	transform: translate(-50%, 20%);
+
 }
 
 /*----------------------------- Media Queries ----------------------------------------*/
@@ -359,5 +361,10 @@ html, body
 	{
 		transform: translate(-50%, -50%) rotate(90deg);
 		font-size: 9em;
+	}
+
+	#loginContainer
+	{
+		width: 90%;
 	}
 }
