@@ -10,8 +10,8 @@ function login(event)
     // Hardcoded users
     const users = 
     [
-        { username: 'minou', password: '0510' },
-        { username: 'nono', password: '0401' }
+        { username: 'Minou', password: '0510' },
+        { username: 'Nono', password: '0401' }
     ];
 
     // Check if entered credentials match any of the hardcoded users
@@ -26,13 +26,13 @@ function login(event)
         setTimeout(() => 
         {
             // Check which user has logged in
-            if (matchedUser.username === 'minou') 
+            if (matchedUser.username === 'Minou') 
             {
                 // Action for user1
                 profileEthan.style.display = 'block';
                 console.log('User 1 logged in');
             } 
-            else if (matchedUser.username === 'nono') 
+            else if (matchedUser.username === 'Nono') 
             {
                 // Action for user2
                 profileNoah.style.display = 'block';
