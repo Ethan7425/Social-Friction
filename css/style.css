@@ -12,11 +12,6 @@
 	position: absolute;
 }
 
-/* input, select, textarea
-{
-	font-size: 16px;
-	touch-action: manipulation;
-} */
 
 /*----------------------------- Fonts ----------------------------------------*/
 
@@ -295,6 +290,13 @@ html, body
 	color: black;
 }
 
+#NoahContainer
+{
+
+}
+
+
+
 /*----------------------------- Yes ----------------------------------------*/
 
 #yesContainer
@@ -439,7 +441,7 @@ html, body
 	}
 	.profileCard
 	{
-		top: 45%;
+		top: 50%;
 	}
 	.backButton
 	{
