@@ -290,10 +290,29 @@ html, body
 	color: black;
 }
 
-#NoahContainer
+.pp
 {
+	position: absolute;
+	top: 8px;
+	left: 8px;
 
+	border: 4px solid var(--customPink);
+	border-radius: 4px;
+	width: 70px;
+	height: 90px;
 }
+.profileName
+{
+	position: absolute;
+	top: 8px;
+	left: 28%;
+
+	border: 4px solid var(--customPink);
+	border-radius: 4px;
+	padding: 6px;
+	width: 70%;
+}
+
 
 
 
