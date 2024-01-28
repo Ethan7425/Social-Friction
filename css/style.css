@@ -298,21 +298,27 @@ html, body
 
 	border: 4px solid var(--customPink);
 	border-radius: 4px;
-	width: 70px;
+	width: 25%;
 	height: 90px;
 }
 .profileName
 {
 	position: absolute;
 	top: 8px;
-	left: 28%;
+	right: 2%;
 
 	border: 4px solid var(--customPink);
 	border-radius: 4px;
 	padding: 6px;
-	width: 70%;
+	width: 65%;
 }
 
+.nbContainer
+{
+	position: absolute;
+	top: 30%;
+	left: 5%;
+}
 
 
 

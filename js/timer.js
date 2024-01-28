@@ -6,6 +6,7 @@ const countdownElement = document.querySelector(".timer");
 const sliderValue = document.getElementById("sliderValue");
 const yes = document.getElementById("yesContainer");
 // const no = document.getElementById("no");
+const nbYesElement = document.querySelector('.nbYes');
 
 function counter() 
 {
