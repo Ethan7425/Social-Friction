@@ -30,13 +30,16 @@
 
 <!-- Home Scene -->
 		<div class="scene" id="home" style="display: block;">
-			<div id="choiceContainer">
+
+			<div id="messageLogin">Login First</div>
+
+			<div id="choiceContainer" style="display: none;">
 				<button id="choiceButton" class="timerYes" onclick="counter()">
 					<img src="img/yes.svg" alt="Choice" style="width: 100%; height: 100%;">
 				</button>
-				<button id="choiceButton" class="timerNo" onclick="changeScene('no')">
+				<!-- <button id="choiceButton" class="timerNo" onclick="changeScene('no')" style="display: none;">
 					<img src="img/no.svg" alt="Choice" style="width: 100%; height: 100%;">
-				</button>
+				</button> -->
 			</div>
 
 			<div id="timerContainer" style="display: none;">
@@ -82,7 +85,7 @@
 				<img src="img/IMG_4209.jpg" alt="nonoFace" id="nonoTroll" style="width: 100%; height: 100%;">
 			</div>
 			<div class="profileName" id="nameNoah">Name : Noah <br> Location : Leognan <br> Fav Anime : SNK <br> Fav Char : Eren</div>
-			<button class="backButton" id="Noah" onclick="backNoah()">Logout</button>
+			<button class="backButton" id="Noah" onclick="logout()">Logout</button>
 		</div>
 
 		<div class="profileCard" id="MinouContainer" style="display: none;">
@@ -94,7 +97,7 @@
 				<div class="nbYes">You said Yes '' times</div>
 				<div class="nbNo">You said No '' times</div>
 			</div>
-			<button class="backButton" id="Ethan" onclick="backEthan()">Logout</button>
+			<button class="backButton" id="Ethan" onclick="logout()">Logout</button>
 		</div>
 		
 	</div>

@@ -82,6 +82,13 @@ function login(event) {
 
         // Wait for 2 seconds (you can adjust the time as needed)
         setTimeout(() => {
+			// Show the Choice container
+			const choiceContainer = document.getElementById('choiceContainer');
+			choiceContainer.style.display = 'block';
+
+			const messagelog = document.getElementById('messageLogin');
+			messagelog.style.display = 'none';
+
             // Check which user has logged in
             if (matchedUser.username === 'Minou') {
                 // Action for user1
@@ -104,21 +111,56 @@ function login(event) {
 // Check if a user is already logged in on page load
 window.onload = function () {
     const loggedInUser = localStorage.getItem('loggedInUser');
-
+	
     if (loggedInUser) {
         // Parse the stored user information
         const user = JSON.parse(loggedInUser);
 
         // Show the corresponding profile container
         const profileContainer = document.getElementById(`${user.username}Container`);
-        if (profileContainer) {
-            profileContainer.style.display = 'block';
-        }
-
+        profileContainer.style.display = 'block';
+        
         // Hide the login container
         const loginContainer = document.getElementById('loginContainer');
-        if (loginContainer) {
-            loginContainer.style.display = 'none';
-        }
+        loginContainer.style.display = 'none';
+
+		// Show the Choice container
+		const choiceContainer = document.getElementById('choiceContainer');
+		choiceContainer.style.display = 'block';
+
+		const messagelog = document.getElementById('messageLogin');
+		messagelog.style.display = 'none';
+    } 
+	else 
+	{
+		const profileEthan = document.getElementById('MinouContainer');
+	    const profileNoah = document.getElementById('NonoContainer');
+
+		profileEthan.style.display = 'none';
+		profileNoah.style.display = 'none';
+    	loginContainer.style.display = 'block';
     }
 };
+
+
+function logout() {
+    // Clear the stored user information
+    localStorage.removeItem('loggedInUser');
+
+    // Hide all profile containers
+    const profileContainers = document.querySelectorAll('.profileCard');
+    profileContainers.forEach(container => {
+        container.style.display = 'none';
+    });
+
+    // Show the login container
+    const loginContainer = document.getElementById('loginContainer');
+        loginContainer.style.display = 'block';
+    
+	// Hide the Choice container
+	const choiceContainer = document.getElementById('choiceContainer');
+	choiceContainer.style.display = 'none';
+	
+	const messagelog = document.getElementById('messageLogin');
+	messagelog.style.display = 'block';
+}

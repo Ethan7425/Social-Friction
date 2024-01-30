@@ -37,17 +37,3 @@ function hideYesPage()
 	const yes = document.getElementById('yesContainer');
 	yes.style.display = 'none';
 }
-
-function backEthan()
-{
-	const EthanContainer = document.getElementById('MinouContainer');
-	EthanContainer.style.display = 'none';
-	loginContainer.style.display = 'block';
-}
-
-function backNoah()
-{
-	const NoahContainer = document.getElementById('NonoContainer');
-	NoahContainer.style.display = 'none';
-	loginContainer.style.display = 'block';
-}
