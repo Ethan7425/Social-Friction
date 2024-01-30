@@ -309,7 +309,10 @@ html, body
 	width: 35%;
 	height: 5%;
 
-	color: black;
+	background-color: var(--customLBlue);
+	border: 4px solid var(--customBlack);
+	border-radius: 4px;
+	color: var(--customBlack);
 }
 
 .pp
