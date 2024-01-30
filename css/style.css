@@ -101,7 +101,8 @@ html, body
 	bottom: 0;
 	left: 50%;
 	transform: translate(-50%);
-	width: 60%;
+
+	width: 100%;
 	height: 15%;
 	padding: 20px 100px;
 	background: transparent;
@@ -117,16 +118,19 @@ html, body
 {
 	position: absolute;
 	left: 0;
-	height: 80%;
+	height: 75%;
 	width: 100%;
 	display: flex;
 	justify-content: space-evenly;
+	align-items: center;
 	z-index: 100;
 }
 
 .navButton
 {
 	width: 25%;
+	height: 90%;
+
 	border: 4px transparent var(--customBlack);
 	background: var(--customBlue);
 	backdrop-filter: blur(50px);
@@ -214,9 +218,10 @@ html, body
 
 	top: 50%;
 	left: 50%;
-	transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%) rotate(90deg);
 
-	font-size: 18em;
+
+	font-size: 9em;
 	font-weight: 900;
 	text-transform: uppercase;
 	color: rgba(255,255,255,0.1);
@@ -233,7 +238,7 @@ html, body
 	transform: translate(-50%, -50%);
 
 	color: white;
-	font-size: 16em;
+	font-size: 12em;
 	font-weight: 700;
 	z-index: 1;
 }
@@ -249,7 +254,7 @@ html, body
 .slider-container 
 {
 	position: absolute;
-	width: 20%;
+	width: 50%;
 	left: 50%;
 	top: 30%;
 	transform: translate(-50%, -50%);
@@ -269,7 +274,7 @@ html, body
 {
 	position: absolute;
 	left: 50%;
-	top: 15%;
+	top: 25%;
 	transform: translate(-50%, -50%);
 	color: var(--customLBlue);
 }
@@ -279,7 +284,7 @@ html, body
 .profileCard
 {
 	position: absolute;
-	top: 40%;
+	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -40%);
 
@@ -294,14 +299,14 @@ html, body
 	color: white;
 }
 
-.backButton
+.logoutButton
 {
 	position: absolute;
 	bottom: 5%;
 	left: 50%;
 	transform: translate(-50%, -5%);
 
-	width: 10%;
+	width: 35%;
 	height: 5%;
 
 	color: black;
@@ -358,7 +363,7 @@ html, body
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	font-size: 10em;
+	font-size: 6em;
 	text-align: center; 
 }
 
@@ -391,7 +396,7 @@ html, body
 #loginContainer 
 {
 	position: absolute;
-	width: 25%;
+	width: 90%;
     background-color: transparent;
     backdrop-filter: blur(20px);
 	padding: 20px;
@@ -426,67 +431,6 @@ html, body
 
 /*----------------------------- Media Queries ----------------------------------------*/
 
-@media (max-width: 600px)
+/* @media (max-width: 600px)
 {
-	.bg
-	{
-		height: 100%;
-	}
-	.navbarContainer
-	{
-		width: 100%;
-	}
-	.navbar
-	{
-		height: 75%;
-		width: 100%;
-		display: flex;
-		align-items: center;
-	}
-	.navButton
-	{
-		width: 25%;
-		height: 90%;
-	}
-	#yes
-	{
-		font-size: 6em;
-	}
-	.slider-container
-	{
-		width: 50%;
-	}
-	/* .timer
-	{
-		font-weight: 5em;
-		width: 50%;
-		left: 0;
-		transform: translate(0%, -50%);
-	} */
-	.timer
-	{
-		font-size: 12em;
-	}
-	#timerContainer:before
-	{
-		transform: translate(-50%, -50%) rotate(90deg);
-		font-size: 9em;
-	}
-
-	#loginContainer
-	{
-		width: 90%;
-	}
-	.link
-	{
-		top: 25%;
-	}
-	.profileCard
-	{
-		top: 50%;
-	}
-	.backButton
-	{
-		width: 25%;
-	}
-}
+} */
