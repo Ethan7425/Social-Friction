@@ -40,14 +40,14 @@ function hideYesPage()
 
 function backEthan()
 {
-	const EthanContainer = document.getElementById('EthanContainer');
+	const EthanContainer = document.getElementById('MinouContainer');
 	EthanContainer.style.display = 'none';
 	loginContainer.style.display = 'block';
 }
 
 function backNoah()
 {
-	const NoahContainer = document.getElementById('NoahContainer');
+	const NoahContainer = document.getElementById('NonoContainer');
 	NoahContainer.style.display = 'none';
 	loginContainer.style.display = 'block';
 }
