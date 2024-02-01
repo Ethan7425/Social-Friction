@@ -251,7 +251,7 @@ html, body
 
 /*----------------------------- Settings Scene ----------------------------------------*/
 
-.slider-container 
+#slider-container 
 {
 	position: absolute;
 	width: 50%;
@@ -281,6 +281,11 @@ html, body
 
 /*----------------------------- Perso Profile Scene ----------------------------------------*/
 
+#loginStatus
+{
+	text-align: center;
+}
+
 .profileCard
 {
 	position: absolute;
@@ -307,8 +312,9 @@ html, body
 	transform: translate(-50%, -5%);
 
 	width: 35%;
-	height: 5%;
+	height: 10%;
 
+	font-size: 1em;
 	background-color: var(--customLBlue);
 	border: 4px solid var(--customBlack);
 	border-radius: 4px;

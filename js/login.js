@@ -83,6 +83,9 @@ window.onload = function () {
 
 		const messagelog = document.getElementById('messageLogin');
 		messagelog.style.display = 'none';
+
+		const slider = document.getElementById('slider-container');
+		slider.style.display = 'block';
     } 
 	else 
 	{
@@ -95,6 +98,10 @@ window.onload = function () {
 		profileAlex.style.display = 'none';
 
     	loginContainer.style.display = 'block';
+
+		// Hide Slider for timer
+		const slider = document.getElementById('slider-container');
+		slider.style.display = 'none';
     }
 };
 
@@ -119,4 +126,7 @@ function logout() {
 	
 	const messagelog = document.getElementById('messageLogin');
 	messagelog.style.display = 'block';
+
+	const slider = document.getElementById('slider-container');
+	slider.style.display = 'none';
 }
