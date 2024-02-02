@@ -46,3 +46,7 @@ function counter(containerId)
 	}, interval);
 }
   
+
+
+//!  I need to find a solution for the t (nb of times yes) because it's the same t for all profiles and even if i save all 3 separetely it still causes 
+//!  troubles with the onload function 
