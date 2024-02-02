@@ -7,33 +7,16 @@ const yes = document.getElementById("yesContainer");
 const nbYesElement = document.querySelector('.nbYes');
 
 
-// const slider = document.getElementById('mySlider');
-// const sliderValue = document.getElementById("sliderValue");
-
-// // Update the slider value on input
-// slider.addEventListener('input', function () 
-// {
-//     sliderValue.textContent = this.value;
-//     // Save the slider value to localStorage
-//     localStorage.setItem('sliderValue', this.value);
-// });
-
-// // Initialize the output value
-// const storedSliderValue = localStorage.getItem('sliderValue');
-// slider.value = storedSliderValue || 15;  // Set a default value if not stored
-// sliderValue.textContent = storedSliderValue || 15;
-
-
-
-function counter() 
+function counter(containerId) 
 {
+
 	countdownElement.textContent = "0"; // Set initial value
 	timerContainer.style.display = "block";
 	
 	var c = 0;
 	
   	// Get the integer value of the slider in seconds
-  	const seconds = parseInt(sliderValue.textContent);
+  	const seconds = parseInt(document.getElementById(`${containerId}SliderValue`).textContent);
 
   	// Calculate the interval in milliseconds
   	const interval = (seconds * 1000) / 100;
