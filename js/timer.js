@@ -4,17 +4,29 @@ const choiceContainer = document.getElementById("choiceContainer");
 const timerContainer = document.getElementById("timerContainer");
 const countdownElement = document.querySelector(".timer");
 const yes = document.getElementById("yesContainer");
-const nbYesElement = document.querySelector('.nbYes');
+// const nbYesElement = document.querySelector('.nbYes');
 
 
-function counter(containerId) 
+
+let t = 0;
+
+function counter(containerId)
 {
+	const nbYesElement = document.getElementById(`${containerId}Yes`);
 
 	countdownElement.textContent = "0"; // Set initial value
 	timerContainer.style.display = "block";
 	
 	var c = 0;
-	
+	 
+	let t = localStorage.getItem('${containerId}YesCount');
+	t++;
+	// Save the updated 't' back to localStorage
+	localStorage.setItem(`${containerId}YesCount`, t.toString());
+	nbYesElement.textContent = `${containerId} said Yes ${t} times`;
+
+
+
   	// Get the integer value of the slider in seconds
   	const seconds = parseInt(document.getElementById(`${containerId}SliderValue`).textContent);
 
