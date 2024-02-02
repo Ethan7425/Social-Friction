@@ -188,21 +188,15 @@ function handleLoggedInUser(user) {
     const profileContainer = document.getElementById(`${user.username}Container`);
     profileContainer.style.display = 'block';
 
-    const choiceContainer = document.getElementById('choiceContainer');
+    const choiceContainer = document.getElementById(`${user.username}ChoiceContainer`);
     choiceContainer.style.display = 'block';
 
     const messageLog = document.getElementById('messageLogin');
     messageLog.style.display = 'none';
 
-    const sliderContainer = document.getElementById('slider-container');
+    const sliderContainer = document.getElementById(`${user.username}SliderContainer`);
     sliderContainer.style.display = 'block';
 
-    const storedSliderValue = localStorage.getItem('sliderValue');
-    const slider = document.getElementById('mySlider');
-    const sliderValue = document.getElementById('sliderValue');
-
-    slider.value = storedSliderValue || 15;
-    sliderValue.textContent = storedSliderValue || 15;
 }
 
 // Check if a user is already logged in on page load
@@ -218,11 +212,14 @@ window.onload = function () {
             container.style.display = 'none';
         });
 
+        const sliderContainers = document.querySelectorAll('.sliderContainer');
+        sliderContainers.forEach(container => {
+            container.style.display = 'none';
+        });
+
         const loginContainer = document.getElementById('loginContainer');
         loginContainer.style.display = 'block';
 
-        const sliderContainer = document.getElementById('slider-container');
-        sliderContainer.style.display = 'none';
     }
 };
 
@@ -235,15 +232,20 @@ function logout() {
         container.style.display = 'none';
     });
 
+    const choiceContainers = document.querySelectorAll('.choiceContainer');
+    choiceContainers.forEach(container => {
+        container.style.display = 'none';
+    });
+
+    const sliderContainers = document.querySelectorAll('.sliderContainer');
+    sliderContainers.forEach(container => {
+        container.style.display = 'none';
+    });
+
     const loginContainer = document.getElementById('loginContainer');
     loginContainer.style.display = 'block';
-
-    const choiceContainer = document.getElementById('choiceContainer');
-    choiceContainer.style.display = 'none';
 
     const messageLog = document.getElementById('messageLogin');
     messageLog.style.display = 'block';
 
-    const sliderContainer = document.getElementById('slider-container');
-    sliderContainer.style.display = 'none';
 }

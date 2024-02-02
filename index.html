@@ -33,13 +33,22 @@
 
 			<div id="messageLogin">Login First</div>
 
-			<div id="choiceContainer" style="display: none;">
+			<div class="choiceContainer" id="MinouChoiceContainer" style="display: none;">
 				<button id="choiceButton" class="timerYes" onclick="counter()">
 					<img src="img/yes.svg" alt="Choice" style="width: 100%; height: 100%;">
 				</button>
-				<!-- <button id="choiceButton" class="timerNo" onclick="changeScene('no')" style="display: none;">
-					<img src="img/no.svg" alt="Choice" style="width: 100%; height: 100%;">
-				</button> -->
+			</div>
+
+			<div class="choiceContainer" id="NonoChoiceContainer" style="display: none;">
+				<button id="choiceButton" class="timerYes" onclick="counter()">
+					<img src="img/yes.svg" alt="Choice" style="width: 100%; height: 100%;">
+				</button>
+			</div>
+
+			<div class="choiceContainer" id="RalexChoiceContainer" style="display: none;">
+				<button id="choiceButton" class="timerYes" onclick="counter()">
+					<img src="img/yes.svg" alt="Choice" style="width: 100%; height: 100%;">
+				</button>
 			</div>
 
 			<div id="timerContainer" style="display: none;">
@@ -56,10 +65,22 @@
 <!-- Settings Scene -->
 
 		<div class="scene" id="settings" style="display: none;">
-			<div id="slider-container">
-				<input type="range" min="1" max="60" value="25" class="slider" id="mySlider">
-				<p>Value: <span id="sliderValue">15</span></p>
+
+			<div class="sliderContainer" id="MinouSliderContainer" style="display: none;">
+				<input type="range" min="1" max="60" value="25" class="slider" id="MinouSlider">
+				<p>Value: <span id="MinouSliderValue">25</span></p>
 			</div>
+
+			<div class="sliderContainer" id="NonoSliderContainer" style="display: none;">
+				<input type="range" min="1" max="60" value="20" class="slider" id="NonoSlider">
+				<p>Value: <span id="NonoSliderValue">20</span></p>
+			</div>
+
+			<div class="sliderContainer" id="RalexSliderContainer" style="display: none;">
+				<input type="range" min="1" max="60" value="5" class="slider" id="RalexSlider">
+				<p>Value: <span id="RalexSliderValue">5</span></p>
+			</div>
+
 		</div>
 
 

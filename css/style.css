@@ -152,7 +152,7 @@ html, body
 
 /*----------------------------- Home Scene ----------------------------------------*/
 
-#choiceContainer
+.choiceContainer
 {
 	position: absolute;
 	top: 50%;
@@ -251,7 +251,7 @@ html, body
 
 /*----------------------------- Settings Scene ----------------------------------------*/
 
-#slider-container 
+.sliderContainer 
 {
 	position: absolute;
 	width: 50%;

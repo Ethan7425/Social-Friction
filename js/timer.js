@@ -3,24 +3,25 @@
 const choiceContainer = document.getElementById("choiceContainer");
 const timerContainer = document.getElementById("timerContainer");
 const countdownElement = document.querySelector(".timer");
-const sliderValue = document.getElementById("sliderValue");
 const yes = document.getElementById("yesContainer");
 const nbYesElement = document.querySelector('.nbYes');
-const slider = document.getElementById('mySlider');
 
 
-// Update the slider value on input
-slider.addEventListener('input', function () 
-{
-    sliderValue.textContent = this.value;
-    // Save the slider value to localStorage
-    localStorage.setItem('sliderValue', this.value);
-});
+// const slider = document.getElementById('mySlider');
+// const sliderValue = document.getElementById("sliderValue");
 
-// Initialize the output value
-const storedSliderValue = localStorage.getItem('sliderValue');
-slider.value = storedSliderValue || 15;  // Set a default value if not stored
-sliderValue.textContent = storedSliderValue || 15;
+// // Update the slider value on input
+// slider.addEventListener('input', function () 
+// {
+//     sliderValue.textContent = this.value;
+//     // Save the slider value to localStorage
+//     localStorage.setItem('sliderValue', this.value);
+// });
+
+// // Initialize the output value
+// const storedSliderValue = localStorage.getItem('sliderValue');
+// slider.value = storedSliderValue || 15;  // Set a default value if not stored
+// sliderValue.textContent = storedSliderValue || 15;
 
 
 
