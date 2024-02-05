@@ -55,10 +55,12 @@
 				<div class="timer"></div>
 			</div>
 
-			<div id="yesContainer" style="display: none;">
+			<div class="scene" id="yesContainer" style="display: none;">
 				<p id="yes">Click OK For Maths ;)</p>
-				<button id="yesButton" onclick="hideYesPage()">Back to Home Page</button>
+				<button id="yesButton" onclick="backHomeScene()">Back to Home Page</button>
 			</div>
+
+			<button id="mathsTest" onclick="switchScene('maths')">Math</button>
 
 		</div>
 
@@ -130,7 +132,7 @@
 			<div class="pp" id="ppAlex">
 				<img src="img/Alex.jpg" alt="Face" id="pfp" style="width: 100%; height: 100%;">
 			</div>
-			<div class="profileName" id="nameAlex">Name : Alex <br> Location : Leognan <br> Fav Anime : Blue Lock <br> Fav Char : Mbappe</div>
+			<div class="profileName" id="nameAlex">Name : Alex <br> Location : Leognan <br> Fav Char : Mbappe</div>
 			<div class="nbContainer">
 				<div class="nbYes" id="RalexYes">ALEX</div>
 			</div>
@@ -138,6 +140,12 @@
 		</div>
 
 	</div>
+
+<!-- Maths Scene -->
+<div class="scene" id="maths" style="display: none;">
+	<button id="yesButton" onclick="switchScene('home')">Go Back to Home</button>
+
+<div>
 
 
 </body>

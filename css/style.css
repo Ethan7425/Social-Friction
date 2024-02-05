@@ -377,9 +377,8 @@ html, body
 #yes
 {
 	position: absolute;
-	top: 50%;
 	left: 50%;
-	transform: translate(-50%, -50%);
+	transform: translate(-50%);
 	font-size: 6em;
 	text-align: center; 
 }
@@ -388,7 +387,7 @@ html, body
 {
 	position: absolute;
 	left: 50%;
-	top: 20%;
+	top: 5%;
 	transform: translate(-50%, -20%);
 
 }

@@ -8,18 +8,25 @@ const yes = document.getElementById("yesContainer");
 
 
 
-let t = 0;
+
+// Load the initial 't' values for each user
+const tMinou = parseInt(localStorage.getItem('MinouYesCount')) || 0;
+const tNono = parseInt(localStorage.getItem('NonoYesCount')) || 0;
+const tRalex = parseInt(localStorage.getItem('RalexYesCount')) || 0;
 
 function counter(containerId)
 {
 	const nbYesElement = document.getElementById(`${containerId}Yes`);
+
+	// Retrieve the stored 't' value for the current user
+    let t = parseInt(localStorage.getItem(`${containerId}YesCount`)) || 0;
 
 	countdownElement.textContent = "0"; // Set initial value
 	timerContainer.style.display = "block";
 	
 	var c = 0;
 	 
-	let t = localStorage.getItem('${containerId}YesCount');
+	// let t = localStorage.getItem('${containerId}YesCount');
 	t++;
 	// Save the updated 't' back to localStorage
 	localStorage.setItem(`${containerId}YesCount`, t.toString());

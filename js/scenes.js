@@ -32,8 +32,19 @@ function changeScene(sceneId) {
   
 
 const loginContainer = document.getElementById('loginContainer')
-function hideYesPage()
+
+
+
+
+function switchScene(sceneIdToShow) 
 {
-	const yes = document.getElementById('yesContainer');
-	yes.style.display = 'none';
+    const scenes = document.querySelectorAll('.scene');
+    scenes.forEach(scene => {
+        scene.style.display = 'none';
+    });
+
+    const showScene = document.getElementById(sceneIdToShow);
+    if (showScene) {
+        showScene.style.display = 'block';
+    }
 }
